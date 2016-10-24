@@ -9,13 +9,14 @@ dependencies:
     - field.field.node.service_request.field_geolocation
     - field.field.node.service_request.field_request_image
     - field.field.node.service_request.field_status
-    - image.style.thumbnail
+    - image.style.large
     - node.type.service_request
   enforced:
     module:
       - service_request
   module:
-    - geolocation
+    - address
+    - geolocation_nominatim
     - image
     - path
     - text
@@ -26,7 +27,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 7
+    weight: 6
     settings:
       rows: 9
       summary_rows: 3
@@ -34,16 +35,15 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 8
+    weight: 7
     settings: {  }
     third_party_settings: {  }
   field_address:
-    weight: 27
+    weight: 5
     settings:
-      size: 60
-      placeholder: ''
+      default_country: null
     third_party_settings: {  }
-    type: string_textfield
+    type: address_default
   field_category:
     type: options_select
     weight: 2
@@ -57,23 +57,16 @@ content:
     third_party_settings: {  }
     type: email_default
   field_geolocation:
-    type: geolocation_leaflet
+    type: geolocation_nominatim_widget
     weight: 0
     settings:
-      populate_address_field: null
-      target_address_field: null
-      leaflet_settings:
-        zoom: 10
-        mapTypeControl: true
-        zoomControl: true
-        scrollwheel: true
-        disableDoubleClickZoom: false
-        draggable: true
-        height: 400px
-        width: 100%
-        info_auto_display: true
-        tileserver: 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png'
-        geocoder: Nominatim
+      zoom: '16'
+      center_lat: '40.78262'
+      center_lng: '-73.96533'
+      limit_countrycodes: us
+      limit_viewbox: '-74.27582,40.85485,-73.67363,40.49030'
+      set_address_field: '1'
+      tileServerUrl: 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png'
     third_party_settings: {  }
   field_image:
     type: image_image
@@ -86,8 +79,8 @@ content:
     type: image_image
     weight: 1
     settings:
+      preview_image_style: large
       progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
   field_sadds:
     weight: 26
@@ -103,24 +96,24 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 11
+    weight: 10
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 9
+    weight: 8
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 10
+    weight: 9
     settings:
       display_label: true
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60
@@ -128,4 +121,3 @@ content:
     third_party_settings: {  }
 hidden:
   title: true
-

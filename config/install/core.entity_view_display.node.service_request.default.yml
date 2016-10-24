@@ -3,18 +3,19 @@ status: true
 dependencies:
   config:
     - field.field.node.service_request.body
+    - field.field.node.service_request.field_address
     - field.field.node.service_request.field_category
+    - field.field.node.service_request.field_e_mail
     - field.field.node.service_request.field_geolocation
     - field.field.node.service_request.field_request_image
     - field.field.node.service_request.field_status
-    - image.style.large
     - node.type.service_request
   enforced:
     module:
       - service_request
   module:
+    - address
     - geolocation
-    - image
     - text
     - user
 id: node.service_request.default
@@ -28,6 +29,12 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+  field_address:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
   field_category:
     type: entity_reference_label
     weight: 3
@@ -60,7 +67,7 @@ content:
     weight: 1
     label: visually_hidden
     settings:
-      image_style: header
+      image_style: large
       image_link: ''
     third_party_settings: {  }
   field_status:
@@ -75,4 +82,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_e_mail: true
   shariff_field: true
