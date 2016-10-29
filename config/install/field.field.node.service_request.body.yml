@@ -13,8 +13,8 @@ id: node.service_request.body
 field_name: body
 entity_type: node
 bundle: service_request
-label: Body
-description: ''
+label: Description
+description: 'Please provide some details here.'
 required: false
 translatable: true
 default_value: {  }
