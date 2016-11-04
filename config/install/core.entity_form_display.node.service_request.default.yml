@@ -59,9 +59,9 @@ content:
     type: geolocation_nominatim_widget
     weight: 0
     settings:
-      zoom: '16'
-      center_lat: '40.78262'
-      center_lng: '-73.96533'
+      zoom: '15'
+      center_lat: '40.72353945'
+      center_lng: '-73.9509387658507'
       limit_countrycodes: us
       limit_viewbox: '-74.27582,40.85485,-73.67363,40.49030'
       set_address_field: '1'
