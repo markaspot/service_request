@@ -1,7 +1,8 @@
-uuid: 0810201689f1205f7c-72a7-16836-9775-05f7c72a771c4741775ccef01f20d08102016
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - image_effects
 name: header_teaser_480x100_
 label: 'Header (teaser 480x100)'
 effects:
@@ -12,3 +13,9 @@ effects:
     data:
       width: 480
       height: 100
+  66195c56-9074-19944-8a78-95c5690743de8618a7852ffe5f098:
+    uuid: 66195c56-9074-19944-8a78-95c5690743de8618a7852ffe5f098
+    id: image_effects_auto_orient
+    weight: -10
+    data:
+      scan_exif: true

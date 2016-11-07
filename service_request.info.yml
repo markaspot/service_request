@@ -12,6 +12,7 @@ dependencies:
   - color_field
   - field_permissions
   - image
+  - image_effects
   - file
   - taxonomy
 config_devel:
