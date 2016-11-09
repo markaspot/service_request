@@ -15,6 +15,9 @@ dependencies:
   - image_effects
   - file
   - taxonomy
+  - paragraphs
+  - entity_reference_revisions
+
 config_devel:
   - core.view_display.node.service_request.default
   - core.view_display.node.service_request.teaser

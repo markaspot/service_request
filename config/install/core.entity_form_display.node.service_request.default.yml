@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.service_request.field_e_mail
     - field.field.node.service_request.field_geolocation
     - field.field.node.service_request.field_request_image
+    - field.field.node.service_request.field_status_notes
     - field.field.node.service_request.field_status
     - node.type.service_request
   enforced:
@@ -17,6 +18,7 @@ dependencies:
     - address
     - geolocation_nominatim
     - image
+    - paragraphs
     - path
     - text
 id: node.service_request.default
@@ -80,6 +82,16 @@ content:
     settings:
       preview_image_style: ''
       progress_indicator: throbber
+    third_party_settings: {  }
+  field_status_notes:
+    type: entity_reference_paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
     third_party_settings: {  }
   field_status:
     type: options_buttons
