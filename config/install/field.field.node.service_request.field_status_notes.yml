@@ -11,8 +11,8 @@ id: node.service_request.field_status_notes
 field_name: field_status_notes
 entity_type: node
 bundle: service_request
-label: 'status notes'
-description: ''
+label: 'Status Notes / Change Status'
+description: 'Explanation of why status was changed to current state or more details on current status than conveyed with status alone.'
 required: false
 translatable: false
 default_value: {  }

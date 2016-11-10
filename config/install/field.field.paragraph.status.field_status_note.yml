@@ -10,8 +10,8 @@ id: paragraph.status.field_status_note
 field_name: field_status_note
 entity_type: paragraph
 bundle: status
-label: 'status note'
-description: sdasdas
+label: 'Step Note'
+description: 'Describe the step you made.'
 required: false
 translatable: false
 default_value: {  }

@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.service_request.field_e_mail
     - field.field.node.service_request.field_geolocation
     - field.field.node.service_request.field_request_image
-    - field.field.node.service_request.field_status
+    - field.field.node.service_request.field_status_notes
     - image.style.large
     - node.type.service_request
   enforced:
@@ -37,6 +37,6 @@ hidden:
   field_category: true
   field_e_mail: true
   field_geolocation: true
-  field_status: true
+  field_status_notes: true
   links: true
   shariff_field: true
