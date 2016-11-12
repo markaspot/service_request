@@ -17,7 +17,7 @@ use Drupal\paragraphs\Entity\Paragraph;
 function service_request_entity_presave(EntityInterface $node) {
 
   // Add paragraph for service_requests that are created / not updated.
-  if ($node->bundle() == 'service_request') {
+  if ($node->bundle() == 'service_request' && !$node->id()) {
     // Get some relevant config.
     $config = \Drupal::configFactory()
       ->getEditable('markaspot_open311.settings');
