@@ -12,12 +12,12 @@ use Drupal\paragraphs\Entity\Paragraph;
 
 
 /**
- * Implements hook_entity_insert().
+ * Implements hook_entity_presave().
  */
-function service_request_entity_insert(EntityInterface $node) {
+function service_request_entity_presave(EntityInterface $node) {
 
   // Add paragraph for service_requests that are created / not updated.
-  if ($node->bundle() == 'service_request' && !$node->id()) {
+  if ($node->bundle() == 'service_request') {
     // Get some relevant config.
     $config = \Drupal::configFactory()
       ->getEditable('markaspot_open311.settings');
