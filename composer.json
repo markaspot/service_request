@@ -2,7 +2,7 @@
   "name": "markaspot/service_request",
   "description": "Service Requests for Mark-a-Spot Open 311 Server and mapping platform",
   "type": "drupal-module",
-  "homepage": "https://github.com/markaspot/markaspot_service_requestgit",
+  "homepage": "https://github.com/markaspot/service_request",
   "authors": [
     {
       "name": "Holger Kreis (markaspot)",
