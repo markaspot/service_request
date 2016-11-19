@@ -13,7 +13,7 @@ id: taxonomy_term.service_category.field_category_hex
 field_name: field_category_hex
 entity_type: taxonomy_term
 bundle: service_category
-label: category_hex
+label: 'Category Color'
 description: ''
 required: true
 translatable: false

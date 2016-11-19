@@ -13,7 +13,7 @@ id: taxonomy_term.service_status.field_status_hex
 field_name: field_status_hex
 entity_type: taxonomy_term
 bundle: service_status
-label: status_hex
+label: 'Status Color'
 description: ''
 required: false
 translatable: false

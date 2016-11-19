@@ -10,6 +10,7 @@ dependencies:
     module:
       - service_request
   module:
+    - fa_icon_class
     - text
 id: taxonomy_term.service_category.default
 targetEntityType: taxonomy_term
@@ -22,6 +23,12 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+  field_category_icon:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: fa_icon_class
   field_service_code:
     weight: 1
     label: above
@@ -29,14 +36,5 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-  field_test:
-    weight: 2
-    label: above
-    settings:
-      format: hex
-      opacity: '1'
-    third_party_settings: {  }
-    type: color_field_formatter_text
 hidden:
   field_category_hex: true
-  field_category_icon: true

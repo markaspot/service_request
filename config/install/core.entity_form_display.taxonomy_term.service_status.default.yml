@@ -7,6 +7,7 @@ dependencies:
     - taxonomy.vocabulary.service_status
   module:
     - color_field
+    - fa_icon_class
     - path
     - text
 id: taxonomy_term.service_status.default
@@ -28,12 +29,10 @@ content:
       default_colors: '#FF0000,#8B0000,#FFA500,#008000,#006400,#0000FF,#00008B,#A020F0,#871F78,#5F9EA0,#ADD8E6,#D3D3D3,#808080,#000000,#F5F5DC,#FFFFFF'
     third_party_settings: {  }
   field_status_icon:
-    type: string_textfield
-    weight: 3
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 5
+    settings: {  }
     third_party_settings: {  }
+    type: fa_icon_class
   name:
     type: string_textfield
     weight: 0

@@ -11,6 +11,7 @@ dependencies:
       - service_request
   module:
     - color_field
+    - fa_icon_class
     - path
     - text
 id: taxonomy_term.service_category.default
@@ -32,12 +33,10 @@ content:
       default_colors: '#FF0000,#8B0000,#FFA500,#008000,#006400,#0000FF,#00008B,#A020F0,#871F78,#5F9EA0,#ADD8E6,#D3D3D3,#808080,#000000,#F5F5DC,#FFFFFF'
     third_party_settings: {  }
   field_category_icon:
-    type: string_textfield
     weight: 5
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
+    type: fa_icon_class
   field_service_code:
     weight: 3
     settings:
