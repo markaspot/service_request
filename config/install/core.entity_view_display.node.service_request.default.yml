@@ -17,7 +17,6 @@ dependencies:
   module:
     - address
     - entity_reference_revisions
-    - geolocation
     - image
     - text
     - user
@@ -45,26 +44,6 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-  field_geolocation:
-    type: geolocation_leaflet_map
-    weight: 5
-    label: visually_hidden
-    settings:
-      title: ''
-      info_text: ''
-      leaflet_settings:
-        zoom: 10
-        mapTypeControl: true
-        zoomControl: true
-        scrollwheel: true
-        disableDoubleClickZoom: false
-        draggable: true
-        height: 400px
-        width: 100%
-        info_auto_display: true
-        tileserver: 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png'
-        geocoder: Nominatim
-    third_party_settings: {  }
   field_request_image:
     type: image
     weight: 1
@@ -87,4 +66,5 @@ content:
     third_party_settings: {  }
 hidden:
   field_e_mail: true
+  field_geolocation: true
   shariff_field: true

@@ -7,8 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.status
   module:
     - text
-_core:
-  default_config_hash: DLzhSoN2YkTidYeYJ4yFPOfmKXAJiZ7yZFKXlSjLxjs
 id: paragraph.status.default
 targetEntityType: paragraph
 bundle: status
