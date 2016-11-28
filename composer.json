@@ -16,6 +16,6 @@
     "drupal/color_field": "2.x-dev",
     "drupal/field_permissions": "1.x-dev",
     "markaspot/fa_icon_class": "dev-master"
-    "markaspot/geolocation_nominatim": "dev-8.x-1.mas",
+    "markaspot/geolocation_nominatim": "dev-8.x-1.mas"
   }
 }
