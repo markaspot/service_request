@@ -4,6 +4,6 @@ dependencies:
   module:
     - node
 id: node.edit_service_request
-label: edit.service_request
+label: Management
 targetEntityType: node
 cache: true
