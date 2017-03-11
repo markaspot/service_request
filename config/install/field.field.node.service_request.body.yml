@@ -1,3 +1,4 @@
+uuid: c09c3a1d-aa6b-46ff-bd3a-0d40aa115e1b
 langcode: en
 status: true
 dependencies:
@@ -9,12 +10,14 @@ dependencies:
       - service_request
   module:
     - text
+_core:
+  default_config_hash: BaxQvkHxbIfXK4tYETBDQ_RC-zMukAIRXE-nW4wPCBs
 id: node.service_request.body
 field_name: body
 entity_type: node
 bundle: service_request
 label: Description
-description: 'Please provide some details here.'
+description: '<p class=help-block>Please provide some details here.</p>'
 required: false
 translatable: true
 default_value: {  }

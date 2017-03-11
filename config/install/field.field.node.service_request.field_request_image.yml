@@ -1,3 +1,4 @@
+uuid: 3fbc2086-62ff-4e58-8d7b-48382a116be1
 langcode: en
 status: true
 dependencies:
@@ -9,12 +10,14 @@ dependencies:
       - service_request
   module:
     - image
+_core:
+  default_config_hash: EeBqsn5m_q8Kl4yxlI7MbF6Z2isVHScD4I5-iAqUTh4
 id: node.service_request.field_request_image
 field_name: field_request_image
 entity_type: node
 bundle: service_request
 label: Image
-description: ''
+description: '<span class="visible"><i class="fa fa-image"></i> You can help us by adding a foto instead of a description.</span>'
 required: false
 translatable: true
 default_value: {  }

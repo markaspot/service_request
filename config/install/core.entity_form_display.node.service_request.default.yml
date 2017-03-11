@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.service_request.field_geolocation
     - field.field.node.service_request.field_request_image
     - field.field.node.service_request.field_status_notes
+    - image.style.medium
     - node.type.service_request
   enforced:
     module:
@@ -33,22 +34,26 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+    region: content
   created:
     type: datetime_timestamp
     weight: 9
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_address:
     weight: 1
     settings:
       default_country: null
     third_party_settings: {  }
     type: address_default
+    region: content
   field_category:
     type: options_select
     weight: 3
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_e_mail:
     weight: 5
     settings:
@@ -56,6 +61,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: email_default
+    region: content
   field_geolocation:
     type: geolocation_nominatim_widget
     weight: 0
@@ -67,7 +73,9 @@ content:
       limit_viewbox: '-74.27582,40.85485,-73.67363,40.49030'
       set_address_field: '1'
       tileServerUrl: 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png'
+      serviceUrl: 'https://nominatim.openstreetmap.org/'
     third_party_settings: {  }
+    region: content
   field_image:
     type: image_image
     weight: 6
@@ -75,13 +83,15 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+    region: content
   field_request_image:
     type: image_image
     weight: 2
     settings:
-      preview_image_style: ''
+      preview_image_style: medium
       progress_indicator: throbber
     third_party_settings: {  }
+    region: content
   field_status_notes:
     type: entity_reference_paragraphs
     weight: 12
@@ -91,24 +101,29 @@ content:
       edit_mode: open
       add_mode: dropdown
       form_display_mode: default
+      default_paragraph_type: ''
     third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 12
     settings: {  }
     third_party_settings: {  }
+    region: content
   promote:
     type: boolean_checkbox
     weight: 10
     settings:
       display_label: true
     third_party_settings: {  }
+    region: content
   sticky:
     type: boolean_checkbox
     weight: 11
     settings:
       display_label: true
     third_party_settings: {  }
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 13
@@ -117,5 +132,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
 hidden:
   title: true
