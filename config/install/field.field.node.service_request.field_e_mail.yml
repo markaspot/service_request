@@ -12,7 +12,7 @@ field_name: field_e_mail
 entity_type: node
 bundle: service_request
 label: E-Mail
-description: 'If you leave a valid e-Mail address, we will inform you on updates.'
+description: 'If you enter a valid e-mail address, we will inform you on updates.'
 required: false
 translatable: false
 default_value: {  }

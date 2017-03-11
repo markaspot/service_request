@@ -11,7 +11,7 @@ field_name: field_geolocation
 entity_type: node
 bundle: service_request
 label: Location
-description: ''
+description: '<span id="locateMe">Use the GPS sensor<span> of your device to show your location on the map or search for a certain address.'
 required: false
 translatable: false
 default_value:
