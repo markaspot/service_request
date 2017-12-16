@@ -7,7 +7,9 @@ dependencies:
     - field.field.node.service_request.field_category
     - field.field.node.service_request.field_e_mail
     - field.field.node.service_request.field_geolocation
+    - field.field.node.service_request.field_organisation
     - field.field.node.service_request.field_request_image
+    - field.field.node.service_request.field_status
     - field.field.node.service_request.field_status_notes
     - image.style.medium
     - node.type.service_request
@@ -37,7 +39,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 9
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -49,10 +51,10 @@ content:
     type: address_default
     region: content
   field_category:
-    type: options_select
-    weight: 3
+    weight: 2
     settings: {  }
     third_party_settings: {  }
+    type: options_select
     region: content
   field_e_mail:
     weight: 5
@@ -86,11 +88,17 @@ content:
     region: content
   field_request_image:
     type: image_image
-    weight: 2
+    weight: 3
     settings:
       preview_image_style: medium
       progress_indicator: throbber
     third_party_settings: {  }
+    region: content
+  field_status:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_status_notes:
     type: entity_reference_paragraphs
@@ -106,20 +114,27 @@ content:
     region: content
   path:
     type: path
-    weight: 12
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     region: content
   promote:
     type: boolean_checkbox
-    weight: 10
+    weight: 7
     settings:
       display_label: true
     third_party_settings: {  }
     region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 11
+    weight: 8
     settings:
       display_label: true
     third_party_settings: {  }
