@@ -3,3 +3,5 @@ paragraphs:
   css:
     theme:
       css/service_request.css: {}
+  js:
+    js/service_request.js: {}
