@@ -1,4 +1,5 @@
-# Open311 Service Requests for Drupal 8
+# Open311 Service Requests for Drupal 8 [deprecated]
+This module has been moved inside 8.4.x of [Mark-a-Spot installation profile](github.com/markaspot/markaspot).
 
 This module defines a content type to save Open311 compatible content as nodes and taxonomy terms in Drupal 8. 
 Default content is included on installation.
